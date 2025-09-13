@@ -1,0 +1,85 @@
+ul { list-style: none; padding: 0px; }
+
+
+.burger_block{
+    position: relative;
+    height: 15.5px;
+}
+
+.burger{
+    width: 27px;
+    height: 15.5px;
+    
+}
+
+.burger::after,
+.burger::before{
+    content: "";
+    background-color: black;
+    width: 27px;
+    height: 2px;
+    position: absolute;
+    border-radius: 25px;
+    transition: all 0.3s ease 0s;
+}
+
+.burger::after{
+    bottom: 0.1px;
+}
+
+.burger span {
+    transition: all 0.3s ease 0s;
+    border-radius: 25px;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    top: 7px
+}
+
+
+.burger_menu{
+    border-radius: 30px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #f5e9dd;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    transform: scale(0);
+    height: 0.01px;
+    transition: all 0.3s ease 0s;
+}
+
+.burger_menu.active {
+    transform: scale(1);
+    height: 100%;
+}
+
+.option{
+    padding: 30px;
+}
+
+.burger.active::after {
+    transform: rotate(45deg);
+    bottom: 50%;
+    transition: all 0.3s ease 0s;
+}
+.burger.active::before {
+    transform: rotate(-45deg);
+    top: 7px;
+    transition: all 0.3s ease 0s;
+}
+.burger.active span {
+    transform: scale(0);
+    transition: all 0.3s ease 0s;
+}
+
+@media (min-width: 1245px) {
+.burger_menu.active{
+    transform: scale(0);
+    height: 0.01px;
+}
+}

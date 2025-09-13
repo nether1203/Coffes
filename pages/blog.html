@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.11.0/axios.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+            integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+            crossorigin="anonymous"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="./styles/style.css" />
+        <link rel="stylesheet" href="./styles/burger.css" />
+        <link rel="stylesheet" href="./styles/lupa.css" />
+        <link rel="stylesheet" href="./styles/news.css" />
+        <link rel="stylesheet" href="./styles/fuctional.css" />
+        <link rel="stylesheet" href="./styles/animation.css" />
+
+        <link rel="icon" type="image/ico" href="./img/coff.png" />
+        <title>CoffeeFor You</title>
+    </head>
+    <body>
+        <header id="header" class="header">
+            <div class="header_blocks">
+                <div class="left_block header_block">
+                    <div class="head_item"><a href="/">Home</a></div>
+                    <div class="head_item"><a href="/about">About</a></div>
+                    <div class="head_item">
+                        <a href="/popularProduct">popularProduct</a>
+                    </div>
+                    <div class="head_item">
+                        <a href="/customer">customer</a>
+                    </div>
+                </div>
+
+                <div class="midlle_block header_block">
+                    <img src="./img/Group 8.png" alt="" srcset="" />
+                </div>
+
+                <div class="right_side_block">
+                    <div class="right_block header_block">
+                        <div class="head_item">
+                            <a class="active" href="/blog">blog</a>
+                        </div>
+                        <div class="head_item">
+                            <a href="bestProduct">bestProduct</a>
+                        </div>
+                        <div class="head_item">
+                            <a href="#contact">Contact</a>
+                        </div>
+                    </div>
+
+                    <div class="search_block header_block">
+                        <div class="lupa_block">
+                            <form class="lupa_form" action="">
+                                <input
+                                    value=""
+                                    class="lupa_input"
+                                    type="search"
+                                />
+                                <img
+                                    src="./img/Лупа.png"
+                                    class="fa fa-search"
+                                />
+                            </form>
+                        </div>
+
+                        <div class="burger_block">
+                            <div class="burger"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="burger_menu">
+                <ul class="burger_list">
+                    <li class="option"><a href="/">Home</a></li>
+                    <li class="option"><a href="/about">About</a></li>
+                    <li class="option">
+                        <a href="/popularProduct">popularProduct</a>
+                    </li>
+                    <li class="option"><a href="/customer">customer</a></li>
+                    <li class="option">
+                        <a class="active" href="/blog">blog</a>
+                    </li>
+                    <li class="option">
+                        <a href="/bestProduct">bestProduct</a>
+                    </li>
+                    <li class="option"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="page" class="fifth_page">
+            <button class="fifth_page_button">FROM OUR BLOG</button>
+            <div
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                class="fifth_page_header"
+            >
+                OUR NEWS & ARTICLES
+            </div>
+            <div class="cards">
+                <div data-aos="flip-right" class="card">
+                    <div class="card_img">
+                        <img src="img/restaurant-interior 1.png" alt="" />
+                    </div>
+                    <div class="card_text">
+                        <span class="by">BY:</span
+                        ><span class="adress">
+                            Cafena / Burger / Apr 30, 2022</span
+                        >
+                        <p class="name">
+                            Build A Cool Morning With Cafena Coffee
+                        </p>
+                        <span class="prise">READ MORE</span>
+                        <img class="arrow" src="img/Grop.png" alt="" />
+                    </div>
+                </div>
+                <div data-aos="flip-right" class="card">
+                    <div class="card_img">
+                        <img
+                            src="img/cappuccino-coffee-white-cup-wooden-table-delicious-croissant-tasty-snak-vintage-coffee-shop 1.png"
+                            alt=""
+                        />
+                    </div>
+                    <div class="card_text">
+                        <span class="by">BY:</span
+                        ><span class="adress">
+                            Cafena / Burger / Apr 30, 2022</span
+                        >
+                        <p class="name">
+                            Build A Cool Morning With Cafena Coffee
+                        </p>
+                        <span class="prise">READ MORE</span>
+                        <img class="arrow" src="img/Grop.png" alt="" />
+                    </div>
+                </div>
+                <div data-aos="flip-right" class="card">
+                    <div class="card_img">
+                        <img
+                            src="img/young-woman-eating-croissants-cafe 1.png"
+                            alt=""
+                        />
+                    </div>
+                    <div class="card_text">
+                        <span class="by">BY:</span
+                        ><span class="adress">
+                            Cafena / Burger / Apr 30, 2022</span
+                        >
+                        <p class="name">
+                            Build A Cool Morning With Cafena Coffee
+                        </p>
+                        <span class="prise">READ MORE</span>
+                        <img class="arrow" src="img/Grop.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="contact" class="footer">
+            <div class="go_to_top_block">
+                <a href="#header"
+                    ><img class="top_arrow" src="./img/Стрілка.png" alt=""
+                /></a>
+
+                <p class="top_text">GO TO TOP</p>
+            </div>
+
+            <div class="info">
+                <div data-aos="zoom-in" class="info_block">
+                    <img class="info_img" src="./img/Телефон.png" alt="" />
+                    <p class="info_title">
+                        <span>Phone: </span>+88019 339 702 520
+                    </p>
+                </div>
+
+                <div data-aos="zoom-in" class="info_block">
+                    <img class="info_img" src="./img/Marker.png" alt="" />
+                    <p class="info_title">
+                        <span>Address: </span>30 North Wes New
+                    </p>
+                </div>
+
+                <form data-aos="zoom-in" action="/lead" class="info_input">
+                    <input
+                        name="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        type="email"
+                    />
+                    <button class="letter_button" type="submit">
+                        <img class="letter" src="./img/Letter.png" alt="" />
+                    </button>
+                </form>
+            </div>
+
+            <div class="additional_info">
+                <div
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                    class="additional_right"
+                >
+                    <img
+                        src="./img/Group 8.png"
+                        alt=""
+                        class="additional_img"
+                    />
+                    <p class="additional_text">
+                        Donec et nibh maximus, congue est eu, mattis nunc.
+                        Praesent <br />
+                        ut quam quis quam venenatis fringilla. Morbi vestibulum
+                    </p>
+                </div>
+
+                <div
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                    class="additional_left"
+                >
+                    <div class="additional_button">
+                        <img
+                            src="./img/facebook.png"
+                            alt=""
+                            class="button_img"
+                        />
+                    </div>
+                    <div class="additional_button">
+                        <img
+                            src="./img/instagram.png"
+                            alt=""
+                            class="button_img"
+                        />
+                    </div>
+                    <div class="additional_button">
+                        <img src="./img/Twiter.png" alt="" class="button_img" />
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="reserved">ALL RIGHT RESERVED © 2022</h4>
+        </footer>
+
+        <div class="news">
+            <div class="news_modal">
+                <div class="news_upper_block">
+                    <h5 class="news_by">
+                        <span>By: </span>Cafena / Burger / Apr 30, 2022
+                    </h5>
+                    <img class="cross" src="./img/cross.png" alt="" />
+                </div>
+
+                <h2 class="news_title">
+                    Build A Cool Morning With Cafena Coffee
+                </h2>
+                <p class="news_main_text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Unde placeat adipisci deserunt sequi labore distinctio autem
+                    tenetur eos vero deleniti similique ab, excepturi, in
+                    praesentium nobis perferendis, nihil officia quasi! Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatibus voluptates aliquid nisi inventore consequuntur
+                    recusandae eos eius, tenetur ipsum fuga fugit iure excepturi
+                    quasi, voluptatum rem dolor soluta perspiciatis!
+                    Voluptatibus.Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Eum perferendis culpa nobis commodi, saepe
+                    autem expedita nisi quaerat. Consequuntur distinctio
+                    voluptas eum et quo expedita quas unde nulla at esse!
+                </p>
+            </div>
+        </div>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+        <script src="main.js"></script>
+        <script src="./scripts/script.js"></script>
+    </body>
+</html>

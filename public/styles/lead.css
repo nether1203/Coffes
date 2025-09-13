@@ -1,0 +1,23 @@
+li {
+    background-color: orange;
+    display: flex;
+    padding: 10px;
+    border-radius: 19px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+li span {
+    margin-left: 10px;
+}
+.date{
+    margin-left: auto;
+}
+
+.email {
+    font-size: larger;
+}
+.index {
+    font-size: larger;
+    font-weight: 700;
+}

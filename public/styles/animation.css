@@ -1,0 +1,158 @@
+@keyframes slide-right-out {
+  from {
+    transform: translateX(0%) ;
+    opacity: 100%;
+
+  }
+
+  to {
+    opacity: 0%;
+    transform: translateX(13.8%) ;
+
+  }
+}
+
+@keyframes slide-right-in {
+  from {
+    transform: translateX(-13.8%) ;
+    opacity: 0%;
+
+  }
+
+  to {
+    opacity: 100%;
+    transform: translateX(0%) ;
+
+  }
+}
+
+@keyframes slide-left-out {
+  from {
+    transform: translateX(0%) ;
+    opacity: 100%;
+
+  }
+
+  to {
+    opacity: 0%;
+    transform: translateX(-13.8%) ;
+
+  }
+}
+
+@keyframes slide-left-in {
+  from {
+    transform: translateX(13.8%) ;
+    opacity: 0%;
+
+  }
+
+  to {
+    opacity: 100%;
+    transform: translateX(0%) ;
+
+  }
+}
+
+@keyframes shake {
+  30% {
+    transform: rotate(20deg);
+  }
+
+    60% {
+    transform: rotate(-20deg);
+  }
+    100% {
+    transform: rotate(0deg);
+  }
+}
+
+.header a, .white a, .fifth_page .prise{
+    transition: all 0.3s ease; 
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+}
+.header a:hover, .white:hover a, .black:hover a {
+    color: #EAB665;
+    transition: all 0.3s ease; 
+}
+.active{
+  color: #EAB665;
+}
+
+.header a.active:after{
+
+  width: 100%; 
+}
+
+
+.header a::after, .white a::after, .fifth_page .prise::after {
+content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px; 
+  background-color: #EAB665; 
+  transition: width 0.3s ease-in-out; 
+}
+
+.header a:hover::after, .white:hover a::after, .fifth_page .prise:hover::after {
+  width: 100%; 
+}
+
+.black:hover, .white:hover{
+    border: #EAB665 solid 3px;
+    transition: all 0.2s ease; 
+    box-shadow: #EAB665;
+    color: #EAB665;
+}
+.black:active{
+    background-color: #EAB665;
+    color: white;
+    transition: all 0.1s ease; 
+}
+.black:active a{
+    color: white;
+    transition: all 0.1s ease; 
+}
+
+.white a:active, .white:active, .fifth_page .prise:active, .additional_button:active{
+    background-color: #EAB665;
+    color: white;
+    transition: all 0.1s ease; 
+}
+
+.white a{
+    height: 100%;
+}
+
+.rightArrow:hover, .leftArrow:hover {
+    transition: all 0.1s ease; 
+    transform: scale(1.2);
+    border-radius: 50%;
+    
+}
+
+.rightArrow:active, .leftArrow:active {
+    background-color: #EAB665;
+}
+
+.arrow:hover{
+  animation: shake 0.3s linear;
+}
+
+.top_arrow:hover, .letter:hover {
+  transform: scale(1.14);
+  transition: all 0.3s ease; 
+}
+
+.top_arrow:active, .letter:active {
+  animation: shake 0.3s linear;
+}
+
+.additional_button:hover {
+  border:#EAB665 1px solid;
+  transition: all 0.3s ease; 
+}

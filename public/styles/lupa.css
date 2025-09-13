@@ -1,0 +1,84 @@
+.lupa_block {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.lupa_form{
+    position: relative;
+
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid #f6f2ee;
+    padding: 5px;
+    margin-right: 68px;
+}
+
+.lupa_input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.fa{
+    box-sizing: border-box;
+    padding: 8px 10px 8px 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #07051a;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+
+.lupa_form:hover{
+    width: 100%;
+    cursor: pointer;
+    border: 4px solid white;
+}
+
+.lupa_form:hover .lupa_input{
+    display: block;
+    
+}
+
+.lupa_form:hover .fa{
+    background: #EAB665;
+    color: white;
+}
+
+@media (max-width: 560px) {
+    .lupa_form {
+       margin-right: 28px; 
+    }
+    .lupa_block {
+    width: 100%;
+    }
+    .midlle_block {
+        margin-right: 10px;
+        
+    }
+}
+
+@media (min-width: 1245px){
+        .lupa_form {
+       margin-right: 0px; 
+    }
+}

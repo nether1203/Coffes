@@ -1,0 +1,22 @@
+.black, .white {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.black > a {
+    color: white;
+}
+
+.fourth_page input {
+    background-color: #f6f2ee;
+    width: 100%;
+    font-size: 14px;
+}
+
+.rightArrow, .leftArrow {
+    cursor: pointer;
+}
